@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "notes_backend": {
+      "candid": "src/notes_backend/notes_backend.did",
+      "package": "notes_backend",
+      "type": "rust"
+    },
+    "notes_frontend": {
+      "dependencies": [
+        "notes_backend"
+      ],
+      "source": [
+        "src/notes_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "notes_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
