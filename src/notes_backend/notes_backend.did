@@ -1,3 +1,5 @@
+type Task = record { title : text; completed : bool; important : bool };
 service : {
-    "greet": (text) -> (text) query;
+  create_task : (text, bool, bool) -> ();
+  get_tasks : () -> (opt vec Task) query;
 }

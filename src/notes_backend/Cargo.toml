@@ -10,5 +10,8 @@ crate-type = ["cdylib"]
 
 [dependencies]
 candid = "0.10"
+chrono = "0.4.39"
 ic-cdk = "0.16"
 ic-cdk-timers = "0.10" # Feel free to remove this dependency if you don't need timers
+ic-stable-structures= "0.6.7"
+serde = "1.0.132"
